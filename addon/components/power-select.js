@@ -395,7 +395,9 @@ export default Component.extend({
     },
 
     onTriggerBlur(_, event) {
-      this.send('deactivate');
+      if (!this.isDestroying) {
+        this.send('deactivate');
+      }
       let action = this.get('onblur');
       if (action) {
         action(this.get('publicAPI'), event);
@@ -403,7 +405,9 @@ export default Component.extend({
     },
 
     onBlur(event) {
-      this.send('deactivate');
+      if (!this.isDestroying) {
+        this.send('deactivate');
+      }
       let action = this.get('onblur');
       if (action) {
         action(this.get('publicAPI'), event);
