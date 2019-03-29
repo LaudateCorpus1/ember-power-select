@@ -39,7 +39,7 @@ export default Component.extend({
 
   // Methods
   focusInput() {
-    this.input = document.querySelector(`.ember-power-select-search-input[aria-controls="${this.get('listboxId')}"]`);
+    this.input = document.querySelector(`.ember-power-select-search-input[aria-owns="${this.get('listboxId')}"]`);
     if (this.input) {
       later(this.input, 'focus', 0);
     }

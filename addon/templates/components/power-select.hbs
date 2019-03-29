@@ -17,6 +17,7 @@
   {{#dropdown.trigger
     role=(readonly triggerRole)
     aria-autocomplete=(readonly ariaAutocomplete)
+    aria-activedescendant=(readonly highlightedId)
     tagName=(readonly _triggerTagName)
     ariaDescribedBy=(readonly ariaDescribedBy)
     ariaInvalid=(readonly ariaInvalid)
@@ -57,6 +58,7 @@
     {{component beforeOptionsComponent
       animationEnabled=(readonly animationEnabled)
       extra=(readonly extra)
+      highlightedId=(readonly highlightedId)
       listboxId=(readonly optionsId)
       onInput=(action "onInput")
       onKeydown=(action "onKeydown")
