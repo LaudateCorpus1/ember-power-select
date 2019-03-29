@@ -85,6 +85,7 @@ export default Component.extend({
   searchMessage: fallbackIfUndefined('Type to search'),
   closeOnSelect: fallbackIfUndefined(true),
   defaultHighlighted: fallbackIfUndefined(defaultHighlighted),
+  triggerRole: fallbackIfUndefined('combobox'),
   typeAheadMatcher: fallbackIfUndefined(defaultTypeAheadMatcher),
   highlightOnHover: fallbackIfUndefined(true),
 
