@@ -281,3 +281,11 @@
     .ember-power-select-group-name { padding-right: $ember-power-select-option-padding; }
   }
 }
+
+.ember-power-select-visuallyhidden {
+  clip: rect(0,0,0,0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
