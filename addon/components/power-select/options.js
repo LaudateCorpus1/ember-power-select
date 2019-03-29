@@ -1,4 +1,5 @@
 import Component from '@ember/component';
+import { isArray } from '@ember/array';
 import { computed } from '@ember/object';
 import layout from '../../templates/components/power-select/options';
 
@@ -28,7 +29,7 @@ export default Component.extend({
   isTouchDevice,
   layout,
   tagName: 'ul',
-  attributeBindings: ['role', 'aria-controls'],
+  attributeBindings: ['role', 'aria-multiselectable'],
   role: 'listbox',
 
   // Lifecycle hooks
@@ -62,8 +63,8 @@ export default Component.extend({
   },
 
   // CPs
-  'aria-controls': computed('select.uniqueId', function() {
-    return `ember-power-select-trigger-${this.get('select.uniqueId')}`;
+  'aria-multiselectable': computed('select.selected', function() {
+    return `${isArray(this.get('select.selected'))}`;
   }),
 
   // Methods
