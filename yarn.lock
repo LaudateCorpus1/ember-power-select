@@ -542,6 +542,13 @@ babel-plugin-debug-macros@^0.1.10, babel-plugin-debug-macros@^0.1.11:
   dependencies:
     semver "^5.3.0"
 
+babel-plugin-debug-macros@^0.2.0-beta.6:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-debug-macros/-/babel-plugin-debug-macros-0.2.0.tgz#0120ac20ce06ccc57bf493b667cf24b85c28da7a"
+  integrity sha512-Wpmw4TbhR3Eq2t3W51eBAQSdKlr+uAyF0GI4GtPfMCD12Y4cIdpKC9l0RjNTH/P9isFypSqqewMPm7//fnZlNA==
+  dependencies:
+    semver "^5.3.0"
+
 babel-plugin-ember-modules-api-polyfill@^1.4.2:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-ember-modules-api-polyfill/-/babel-plugin-ember-modules-api-polyfill-1.6.0.tgz#abd1afa4237b3121cb51222f9bf3283cad8990aa"
@@ -553,6 +560,13 @@ babel-plugin-ember-modules-api-polyfill@^2.3.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-ember-modules-api-polyfill/-/babel-plugin-ember-modules-api-polyfill-2.3.2.tgz#56ea34bea963498d070a2b7dc2ce18a92c434093"
   dependencies:
     ember-rfc176-data "^0.3.0"
+
+babel-plugin-ember-modules-api-polyfill@^2.6.0:
+  version "2.13.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-ember-modules-api-polyfill/-/babel-plugin-ember-modules-api-polyfill-2.13.4.tgz#cf62bc9bfd808c48d810d5194f4329e9453bd603"
+  integrity sha512-uxQPkEQAzCYdwhZk16O9m1R4xtCRNy4oEUTBrccOPfzlIahRZJic/JeP/ZEL0BC6Mfq6r55eOg6gMF/zdFoCvA==
+  dependencies:
+    ember-rfc176-data "^0.3.13"
 
 babel-plugin-feature-flags@^0.3.1:
   version "0.3.1"
@@ -1061,6 +1075,22 @@ broccoli-asset-rewrite@^1.1.0:
 broccoli-babel-transpiler@^6.0.0, broccoli-babel-transpiler@^6.1.2, broccoli-babel-transpiler@^6.4.2:
   version "6.4.3"
   resolved "https://registry.yarnpkg.com/broccoli-babel-transpiler/-/broccoli-babel-transpiler-6.4.3.tgz#06e399298d41700cdc10d675b1d808a89ef6b2d0"
+  dependencies:
+    babel-core "^6.26.0"
+    broccoli-funnel "^2.0.1"
+    broccoli-merge-trees "^2.0.0"
+    broccoli-persistent-filter "^1.4.3"
+    clone "^2.0.0"
+    hash-for-dep "^1.2.3"
+    heimdalljs-logger "^0.1.7"
+    json-stable-stringify "^1.0.0"
+    rsvp "^4.8.2"
+    workerpool "^2.3.0"
+
+broccoli-babel-transpiler@^6.5.0:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/broccoli-babel-transpiler/-/broccoli-babel-transpiler-6.5.1.tgz#a4afc8d3b59b441518eb9a07bd44149476e30738"
+  integrity sha512-w6GcnkxvHcNCte5FcLGEG1hUdQvlfvSN/6PtGWU/otg69Ugk8rUk51h41R0Ugoc+TNxyeFG1opRt2RlA87XzNw==
   dependencies:
     babel-core "^6.26.0"
     broccoli-funnel "^2.0.1"
@@ -2280,6 +2310,25 @@ ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-be
     ember-cli-version-checker "^2.1.2"
     semver "^5.5.0"
 
+ember-cli-babel@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.18.0.tgz#3f6435fd275172edeff2b634ee7b29ce74318957"
+  integrity sha512-7ceC8joNYxY2wES16iIBlbPSxwKDBhYwC8drU3ZEvuPDMwVv1KzxCNu1fvxyFEBWhwaRNTUxSCsEVoTd9nosGA==
+  dependencies:
+    amd-name-resolver "1.2.0"
+    babel-plugin-debug-macros "^0.2.0-beta.6"
+    babel-plugin-ember-modules-api-polyfill "^2.6.0"
+    babel-plugin-transform-es2015-modules-amd "^6.24.0"
+    babel-polyfill "^6.26.0"
+    babel-preset-env "^1.7.0"
+    broccoli-babel-transpiler "^6.5.0"
+    broccoli-debug "^0.6.4"
+    broccoli-funnel "^2.0.0"
+    broccoli-source "^1.1.0"
+    clone "^2.0.0"
+    ember-cli-version-checker "^2.1.2"
+    semver "^5.5.0"
+
 ember-cli-blueprint-test-helpers@^0.18.3:
   version "0.18.3"
   resolved "https://registry.yarnpkg.com/ember-cli-blueprint-test-helpers/-/ember-cli-blueprint-test-helpers-0.18.3.tgz#945c606d855f0263f5e8c03522e4040a74f259cc"
@@ -2814,6 +2863,11 @@ ember-rfc176-data@^0.2.0:
 ember-rfc176-data@^0.3.0, ember-rfc176-data@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/ember-rfc176-data/-/ember-rfc176-data-0.3.3.tgz#27fba08d540a7463a4366c48eaa19c5a44971a39"
+
+ember-rfc176-data@^0.3.13:
+  version "0.3.16"
+  resolved "https://registry.yarnpkg.com/ember-rfc176-data/-/ember-rfc176-data-0.3.16.tgz#2ace0ac9cf9016d493a74a1d931643a308679803"
+  integrity sha512-IYAzffS90r2ybAcx8c2qprYfkxa70G+/UPkxMN1hw55DU5S2aLOX6v3umKDZItoRhrvZMCnzwsdfKSrKdC9Wbg==
 
 ember-router-generator@^1.2.3:
   version "1.2.3"
